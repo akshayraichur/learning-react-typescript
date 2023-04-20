@@ -5,6 +5,7 @@ type GreetProps = {
 };
 
 const Greet: React.FC<GreetProps> = (props) => {
+  const { messageCount = 0, isLoggedIn = true } = props; // assigning default values, since they are optional
   return (
     <div>
       <h2>
