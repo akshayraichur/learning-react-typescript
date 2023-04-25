@@ -10,6 +10,7 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
 import Counter from "./components/state/counter";
+import Box from "./components/context/Box";
 
 const App: React.FC = () => {
   const personName = {
@@ -36,6 +37,7 @@ const App: React.FC = () => {
       <Input value="hi there" handleChange={(e) => console.log("input changed", e.target.value)} />
       <Container styles={{ border: "1px solid red", padding: "2rem" }} />
       <Counter />
+      <Box />
     </div>
   );
 };
