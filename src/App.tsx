@@ -11,6 +11,7 @@ import Input from "./components/Input";
 import Container from "./components/Container";
 import Counter from "./components/state/counter";
 import Box from "./components/context/Box";
+import User from "./components/context/User";
 
 const App: React.FC = () => {
   const personName = {
@@ -38,6 +39,8 @@ const App: React.FC = () => {
       <Container styles={{ border: "1px solid red", padding: "2rem" }} />
       <Counter />
       <Box />
+
+      <User />
     </div>
   );
 };
